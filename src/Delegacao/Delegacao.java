@@ -30,7 +30,7 @@ public class Delegacao {
 	public Corredor leCorredor (){
 
 		String [] valores = new String [5];
-		String [] nomeVal = {"Nome", "Número", "Categoria", "Quantidade de provas", "Pace (em min/km)"};
+		String [] nomeVal = {"Nome", "Número", "Categoria\n(Amador, Elite)", "Quantidade de provas", "Pace (em min/km)"};
 		valores = leValores (nomeVal);
 
 		int num = this.retornaInteiro(valores[1]);
@@ -44,7 +44,7 @@ public class Delegacao {
 	public Nadador leNadador (){
 
 		String [] valores = new String [5];
-		String [] nomeVal = {"Nome", "Número", "Categoria", "Quantidade de provas", "Pace (em min/km)"};
+		String [] nomeVal = {"Nome", "Número", "Categoria\n(Amador, Elite)", "Quantidade de provas", "Pace (em min/km)"};
 		valores = leValores (nomeVal);
 
 		int num = this.retornaInteiro(valores[1]);
@@ -57,7 +57,7 @@ public class Delegacao {
 	public Saltador leSaltador (){
 
 		String [] valores = new String [5];
-		String [] nomeVal = {"Nome", "Número", "Categoria", "Quantidade de provas", "Pace (em min/km)"};
+		String [] nomeVal = {"Nome", "Número", "Categoria\n(Amador, Elite)", "Quantidade de provas", "Pace (em min/km)"};
 		valores = leValores (nomeVal);
 
 		int num = this.retornaInteiro(valores[1]);
@@ -205,7 +205,7 @@ public class Delegacao {
 				break;
 			case 2: // Exibir dados
 				if (atletas.size() == 0) {
-					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atlestas antes.");
+					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atletas antes.");
 					break;
 				}
 				String dados = "";
@@ -216,7 +216,7 @@ public class Delegacao {
 				break;
 			case 3: // Limpar Dados
 				if (atletas.size() == 0) {
-					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atlestas antes.");
+					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atletas antes.");
 					break;
 				}
 				atletas.clear();
@@ -224,7 +224,7 @@ public class Delegacao {
 				break;
 			case 4: // Grava Dados
 				if (atletas.size() == 0) {
-					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atlestas antes.");
+					JOptionPane.showMessageDialog(null,"Necessário fazer a inscrição dos atletas antes.");
 					break;
 				}
 				salvaAtletas(atletas);

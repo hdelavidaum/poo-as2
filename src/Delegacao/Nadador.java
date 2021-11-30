@@ -3,9 +3,8 @@ package Delegacao;
 public class Nadador extends Atleta {
 
 	private static final long serialVersionUID = 1L;
-	
-	String estilo;
-	final String esporte = "Natação";
+	protected final String esporte = "Natação";
+	protected String estilo;
 
 	public Nadador(String nome, int numero, String categoria, int provas, String estilo) {
 		super(nome, numero, categoria, provas);

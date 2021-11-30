@@ -3,8 +3,8 @@ package Delegacao;
 public class Corredor extends Atleta {
 
 	private static final long serialVersionUID = 1L;
-	final String esporte = "Corrida";
-	double pace;
+	protected final String esporte = "Corrida";
+	protected double pace;
 
 	public Corredor(String nome, int numero, String categoria, int provas, double pace) {
 		super(nome, numero, categoria, provas);

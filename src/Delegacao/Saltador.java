@@ -3,9 +3,8 @@ package Delegacao;
 public class Saltador extends Atleta {
 
 	private static final long serialVersionUID = 1L;
-	
+	protected final String esporte = "Salto em distância";
 	protected double altura;
-	final String esporte = "Salto em distância";
 
 	public Saltador(String nome, int numero, String categoria, int provas, double altura) {
 		super(nome, numero, categoria, provas);
